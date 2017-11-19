@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<html>
+  <head>
+    <title>Ho-Pang's Blog</title>
+    <link rel=icon
+          href=/images/icon.png>
+    <link rel="stylesheet"
+          type="text/css"
+          href="../css/main.css">
+  </head>
+
+  <body>
+    <div id=header-div>
+      <div id=header-banner-container>
+        <img src="images/icon.png"/>
+        <a class=header-item href="./under_construction.html"> 徐合邦 </a>
+        <a class=header-item href="./index.html" style="color: GoldenRod;"> Ho-Pang Hsu </a>
+      </div>
+      <div id=header-nav-container>
+        <a class=header-item href="./under_construction.html"> Notes </a>
+        <a class=header-item href="./under_construction.html"> Projects </a>
+        <a class=header-item id=header-nav-item-contact>Contact</a>
+      </div>
+    </div>
+
+    <div id=content-div-outer>
+      <div id=content-div-inner>
+        <h1>Welcome!</h1>
+        <p>
+        Hi there, I'm Ho-Pang Hsu.
+        </p>
+
+        <p>
+        I am a programmer from Taipei, Taiwan. Though I am not a brilliant one, I am still fond of seeing, learning and sharing interesting things. At this moment, I am exploring this exciting world of programming via doing projects on various platfroms, and hoping that I could become more of a good programmer everyday.
+        </p>
+
+        <p>
+        In additional to programming, I am actually an outdoor person. Among all the activities I've tried, I enjoy cycling and snowboarding the best. However, if there is anything you're sure of that I don't want to miss, don't hesitate to let me know.
+        </p>
+      </div>
+    </div>
+
+    <div id=footer-div>
+      <p>
+      <a href="mailto:hopang.hsu@gmail.com">Email</a> |
+      <a href="http://www.facebook.com/hopanghsu">Facebook</a> |
+      <a href="https://github.com/hopanghsu">Github</a> |
+      <a href="https://www.linkedin.com/in/hopanghsu">LinkedIn</a>
+      </p>
+    </div>
+  </body>
+
+  <script>
+
+      var element = document.getElementById('header-nav-item-contact');
+      var footer = document.getElementById('footer-div');
+      var color = footer.style.backgroundColor;
+
+      element.addEventListener('mousedown', _ => {
+        footer.style.backgroundColor='LightSeaGreen';
+      });
+
+      element.addEventListener('mouseup', _ => {
+        footer.style.backgroundColor=color;
+      });
+
+  </script>
+</html>
+

@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<html>
+  <head>
+    <title>Ho-Pang's Blog</title>
+    <link rel=icon
+          href=/images/icon.png>
+    <link rel="stylesheet"
+          type="text/css"
+          href="../css/main.css">
+  </head>
+
+  <body>
+    <div id=header-div>
+      <div id=header-banner-container>
+        <img src="images/icon.png"/>
+        <a class=header-item href="./under_construction.html"> 徐合邦 </a>
+        <a class=header-item href="./index.html"> Ho-Pang Hsu </a>
+      </div>
+      <div id=header-nav-container>
+        <a class=header-item href="./under_construction.html"> Notes </a>
+        <a class=header-item href="./under_construction.html"> Projects </a>
+        <a class=header-item id=header-nav-item-contact>Contact</a>
+      </div>
+    </div>
+
+    <div id=content-div-outer>
+      <div id=content-div-inner>
+        <h1>Under Construction</h1>
+        <p>
+        Coming soon.
+        </p>
+      </div>
+    </div>
+
+    <div id=footer-div>
+      <p>
+      <a href="mailto:hopang.hsu@gmail.com">Email</a> |
+      <a href="http://www.facebook.com/hopanghsu">Facebook</a> |
+      <a href="https://github.com/hopanghsu">Github</a> |
+      <a href="https://www.linkedin.com/in/hopanghsu">LinkedIn</a>
+      </p>
+    </div>
+  </body>
+
+  <script>
+
+      var element = document.getElementById('header-nav-item-contact');
+      var footer = document.getElementById('footer-div');
+      var color = footer.style.backgroundColor;
+
+      element.addEventListener('mousedown', _ => {
+        footer.style.backgroundColor='LightSeaGreen';
+      });
+
+      element.addEventListener('mouseup', _ => {
+        footer.style.backgroundColor=color;
+      });
+
+  </script>
+</html>
+
